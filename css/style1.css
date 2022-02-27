@@ -1,0 +1,488 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*CSS for header*/
+#header{
+    width: 100%;
+   height: 90px; 
+   display:flex;
+   justify-content: center;
+}
+
+#header .header-inner{
+    width:80%;
+    height:100%;
+    display: flex;
+    
+}
+
+#header .header-inner .logo{
+    width: 25%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width:100%;
+    max-height:100%;
+}
+#header .header-inner .nav{
+    width: 75%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+.main-menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+.main-menu>li{
+    width:fit-content;
+    margin-right: 15px;
+    padding: 5px;
+    position:relative;
+}
+.main-menu>li>a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #f5eeee;
+}
+.sub-menu{
+    display:none;
+    
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+    position:absolute;
+    top: 25px;
+    left: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width:max-content;
+    box-shadow:blanchedalmond 1px 1px 1px 1px ;
+}
+.main-menu li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+
+}
+.main-menu li:hover .sub-menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Archivo', sans-serif;
+}
+.A:hover{
+    color: #0b249e;
+   }
+
+.main-menu li .sub-menu li a:hover{
+    text-decoration: none;
+    color: #0b249e;
+}
+.main-menu li .sub-menu li:hover{
+    text-decoration: none;
+    background-color:ghostwhite;
+}
+
+/*CSS for slider*/
+#slider{
+    width:100%;
+    height:700px;
+}
+.slide-item{
+    width:100%;
+    height:100%;
+}
+.slide-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* CSS for intro */
+#intro{
+    display:flex;
+    justify-content: center;
+    padding: 84px 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    height: auto;
+
+}
+#intro-inner{
+    width:70%;
+    display:flex;
+    padding: 10px;
+}
+.intro-img{
+    height: 406.875px;
+    width: 495.597px;
+    padding:0 25px 25px 25px;
+    box-sizing:border-box;
+    display:flex;
+}
+.intro-img img{
+    height:382.097px;
+    width: 446.042px;
+}
+.intro-text{
+    box-sizing: border-box;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*content box */
+#content{
+    height: auto;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    padding-top: 0px;
+    
+}
+.content-frame h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 35px;
+    text-align: center;
+    marign: 30px 0 50px 10;
+}
+
+.row{
+    display:flex;
+    justify-content:center;
+    margin:30px;
+}
+.col-sm-2{
+    border:2px solid rgb(83, 83, 172);
+    margin:30px;
+    
+}
+.card{
+    border: none;
+}
+.box-icon{
+    text-align: center;
+    height: 50px;
+    margin:20px;
+}
+.col-sm-2{
+    width: 305px;
+    height: 240px;
+    border-radius: 10px;
+    
+}
+.card-body{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    padding: 15px;
+    
+}
+.box-icon i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(26, 26, 148, 0.842);
+}
+h5{
+    text-align: center;
+    font-size: 18px;
+    margin-top:10px;
+}
+.card-body p{
+    text-align: center;
+    margin-top:10px;
+}
+/*widget */
+#widget{
+    width: 100%;
+    height: 750px;
+    background-color: #0b249e;
+    
+}
+.widget-frame h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+   
+    height: 35px;
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+.row1{
+    display:flex;
+    justify-content:center;
+    margin-top: 100px;
+    height: auto;
+}
+.col1{
+    border:3px solid #ffffff;
+    margin:30px;
+    
+}
+.card-body1{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    
+}
+.card1{
+    border: none;
+   
+}
+.card-body1 p{
+    text-align: center;
+    margin-top:10px;
+}
+.row2{
+    display:flex;
+    justify-content:center;
+    margin-left: 150px;
+    width: 80%;
+    margin-top: 15px;
+}
+.col2{
+    width: 100%;
+}
+.col2 h5{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.button-icon{
+    border:3px solid #ffffff;
+    height:55px;
+    width: 170px;
+
+
+}
+.btn{
+    font-weight: 700;
+    color: #fff;
+   padding-top: 12px;
+   padding-left: 15px;
+}
+/* Đối tượng tham gia khóa học */
+
+
+.Object-content{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 83px 0 39px;
+}
+.Object-container{
+    display: flex;
+}
+.Object-container__inner{
+    border: 1px solid #E1E0E0;
+    margin: 0 16px;
+    width: 33.3333%;
+}
+.Object-box{
+    padding: 18px;
+}
+.Object-box-img{
+    width: 100%;
+}
+.Object-content-footer span{
+    display: block;
+    font-size: 16px;
+    font-weight: 599;
+    line-height: 23px;
+    text-align: center;
+}
+.Object-content-footer{
+    padding: 13px 15px 37px 14px;
+}
+/* Form đăng kí và thông tin chỗ học */
+
+.registration{
+    background-image: linear-gradient(180deg, #08219F 0%, #2102D5 100%);
+    color: white;
+    margin-top: 76px;
+}
+.registration-container{
+    display: flex;
+}
+.registration-form{
+    width: 50%;
+}
+
+.registration-form-content1{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 83px 0 23px;
+    color: #F7FD09;
+}
+.registration-form-content2{
+    color: var( --e-global-color-2f63c289 );
+    margin: 0 0 25px;
+    font-family: "Arial", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.registration-form-box{
+    margin-top: 46px;
+}
+.registration-btn{
+    display: block;
+    width: 491px;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    margin-left: 52px;
+    background-color: #EDEDED;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 19px 53px;
+    background-color: #EDB017;
+    margin-top: 46px;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+}
+.registration-btn:hover{
+    background-color: #008FBA;
+    color: #FFF;
+}
+
+.registration-btn-link{
+    text-decoration: none;
+    text-decoration: none;
+    color: #333331;
+    font-size: 16px;
+    font-weight: 600;
+}
+.registration-info{
+    width: 50%;
+    margin-top: 73px;
+    margin-left: 52px;
+}
+
+.registration-info-content1{
+    
+    padding: 11px 0;
+}
+.registration-info-content1 i{
+    color: #FFFD09;
+    font-size: 19px;
+}
+.registration-info-content1 span{
+    padding-left: 11px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28.8px;
+    text-align: left;
+    word-spacing: 0;
+}
+.registration-info-oclock{
+    margin: 20px 0 10px 13px;
+}
+.registration-info-oclock i{
+    font-size: 14px;
+}
+
+
+.name,.email,.phone,.dress,.form-select{
+    display: block;
+    width: 491px;
+    height: 39px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    margin-left: 52px;
+    background-color: #EDEDED;
+    color: #333333;
+    font-size: 17px;
+    border-radius: 2px;
+    margin: 19px 53px;
+}
+
+.registration-info-oclock__icon{
+    padding: 10px 10px;
+
+}
+/* Nội dung khóa học */
+
+.course{
+    background-color: #EAEAEA;
+}
+
+.course-header h1{
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 0 0 ;
+
+}
+
+.course-container{
+    display: flex;
+    padding: 0 0 46px 0;
+}
+.course-img{
+    width: 50%;
+}
+.course-img img{
+    width: 65%;
+    max-width: 100%;
+    margin-left: 200px;
+}
+.course-info{
+    width: 50%;
+    margin-top: 38px;
+}
+
+.course-info1 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 44.4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.course-tuition{
+    margin-top: 27px;
+    position: relative;
+}
+.course-tuition p{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.course-tuition ul{
+    margin-left: 23px;
+    font-size: 16px;
+    margin-top: 13px;
+    list-style: disc;
+    display: none;
+}
+.course-tuition ul li{
+    padding: 6px 0;
+}
+
+.course-tuition p:hover ~ ul{
+    display: block;
+}
+
